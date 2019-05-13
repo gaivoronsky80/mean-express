@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheets/style2.css">
+	<title>Details</title>
+</head>
+<body>
+	<header>
+		<% for (var x in cat) { %>
+		<h1>Details Page for <%= cat[x].name %></h1>
+	</header>
+	<div class="wrapper">
+		<img id="oval" src="images/<%= cat[x].img %>">
+		<p class="first_block">Favorite food: <%= cat[x].favorite_food %></p>
+		<p class="second_block">Age: <%= cat[x].age %></p>	
+		<ul class="third_block">
+			<li>Sleeping spots: </li>
+			<% for (var i in cat[x].sleeping_spot) { %>
+			<li><%= cat[x].sleeping_spot[i] %></li>
+			<% } %>
+		<% } %>
+		</ul>
+		<br>
+		<a href="/cats">Go Back!</a>
+	</div>
+</body>
+</html>

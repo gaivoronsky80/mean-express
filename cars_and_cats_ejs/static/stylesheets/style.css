@@ -1,0 +1,20 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	width: 100%;
+}
+
+img {
+	width: 25%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-between;
+}
